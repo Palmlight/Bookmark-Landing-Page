@@ -27,6 +27,7 @@ body{
     .flex > * {
         flex: 1;
     }
+    
     .btn {
         padding: 10px 30px;
         border-radius: 10px;
@@ -127,10 +128,62 @@ body{
             h2 {
                 text-align: center;
                 color: $Very-Dark-Blue;
-                font-size: 2em;
+                font-size: 1.7em;
                 font-weight: 500;
+                margin-bottom: 20px;
+            }
+            p {
+                width: 45%;
+                margin: 20px auto 50px auto;
+                text-align: center;
+                line-height: 1.5;
+                color: $Grayish-Blue;
             }
         }
+        .htab {
+            text-align: center;
+            position: relative;
+            ul {
+                list-style: none;            
+                li a {
+                    text-decoration: none;
+                    color: $Very-Dark-Blue;
+                    font-size: 0.9em;
+                    cursor: pointer;
+                }
+
+                
+            }
+           
+        }
+        .tablinks.active {
+            border-bottom: 2px solid orangered;
+        }
+
+        .tabs {
+            .tab {
+                display: none;
+                margin-top: 50px;
+                justify-content: center;
+                align-items: center;
+                
+              .tab-p {
+                  margin-left: 60px;
+                    p {
+                      width: 100%;
+                      text-align: left;
+                      margin-bottom: 15px;
+                    }
+              }
+            }
+
+            .tab.show {
+                display: flex;
+            }
+        }
+
+
+
     }
 }
 .attribution { font-size: 11px; text-align: center; }

@@ -129,8 +129,58 @@ body .feature {
 body .feature div h2 {
   text-align: center;
   color: #252b46;
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: 500;
+  margin-bottom: 20px;
+}
+
+body .feature div p {
+  width: 45%;
+  margin: 20px auto 50px auto;
+  text-align: center;
+  line-height: 1.5;
+  color: #9194a1;
+}
+
+body .feature .htab {
+  text-align: center;
+  position: relative;
+}
+
+body .feature .htab ul {
+  list-style: none;
+}
+
+body .feature .htab ul li a {
+  text-decoration: none;
+  color: #252b46;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+body .feature .tablinks.active {
+  border-bottom: 2px solid orangered;
+}
+
+body .feature .tabs .tab {
+  display: none;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+body .feature .tabs .tab .tab-p {
+  margin-left: 60px;
+}
+
+body .feature .tabs .tab .tab-p p {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+body .feature .tabs .tab.show {
+  display: flex;
 }
 
 .attribution {
