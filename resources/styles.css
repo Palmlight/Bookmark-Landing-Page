@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -43,7 +45,7 @@ body .btn.blue {
 
 body nav {
   align-content: space-between;
-  padding-top: 20px;
+  padding-top: 40px;
   font-size: 14px;
   font-weight: light;
 }
@@ -90,6 +92,7 @@ body header div p {
   line-height: 1.5;
   font-size: 1em;
   width: 90%;
+  margin: 20px 0;
 }
 
 body header div .buttons {
@@ -97,6 +100,7 @@ body header div .buttons {
   justify-content: flex-start;
   outline: inherit;
   border: none;
+  margin-top: 25px;
 }
 
 body header div .buttons :first-child {
@@ -289,16 +293,121 @@ body .faq .deet .fp {
 }
 
 body .faq .accord {
-  width: 800px;
+  width: 600px;
   max-width: 100%;
   margin: 0 auto;
 }
 
-.attribution {
-  font-size: 11px;
+body .faq .accord .question {
+  border-bottom: 0.5px solid grey;
+}
+
+body .faq .accord .question .qbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+body .faq .accord .question .qbar .qarr {
+  margin: auto 20px auto 10px;
+}
+
+body .faq .accord .question .answer {
+  text-align: justify;
+  display: none;
+}
+
+body .faq .accord .question .answer.active {
+  display: block;
+}
+
+body .faq .accord .question1 {
+  border-top: 1px solid #9194a1;
+}
+
+body .faq .more {
+  display: flex;
+  margin: 20px auto;
+}
+
+body .footer1 {
+  margin-bottom: 0;
+  background-color: #5368df;
+}
+
+body .footer1 .footerd {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+body .footer1 .footerd p {
+  color: #fff;
+  font-size: 1em;
   text-align: center;
 }
 
-.attribution a {
-  color: #3e52a3;
+body .footer1 .footerd h4 {
+  color: #fff;
+  text-align: center;
+  width: 25%;
+  font-size: 1.4em;
+  margin: 20px auto;
+}
+
+body .footer1 .footerd .contact {
+  text-align: center;
+  margin-top: 20px;
+}
+
+body .footer1 .footerd .contact input {
+  padding: 8px 20px;
+  border-radius: 4px;
+  margin: 0 30px 0 auto;
+}
+
+body .footer2 {
+  background-color: #252b46;
+  padding-bottom: 20px;
+}
+
+body .footer2 .final {
+  justify-content: space-between;
+}
+
+body .footer2 .footerl {
+  list-style: none;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+body .footer2 .footerl li a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 0.8em;
+}
+
+body .footer2 .sm-icons {
+  list-style: none;
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: flex-end;
+}
+
+body .footer2 .sm-icons li a {
+  margin-left: 30px;
+}
+
+body .footer2 .attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+}
+
+body .footer2 .attribution a {
+  color: tomato;
 }

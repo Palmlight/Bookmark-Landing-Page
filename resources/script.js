@@ -13,3 +13,11 @@ tabs.forEach((tab, index) => tab.addEventListener('click', () => {
   tab.classList.add('active');
   tabContents[index].classList.add('show');
 }) );
+
+// for the faqs
+const question = document.querySelectorAll(".qbar");
+const answer = document.querySelectorAll(".answer");
+
+question.forEach((q, index) => q.addEventListener('click', () => {
+  answer[index].classList.toggle('active');
+}))
