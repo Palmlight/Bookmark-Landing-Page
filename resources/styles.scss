@@ -124,7 +124,7 @@ body{
     }
     .feature {
         margin-top: 18vh;
-        div {
+        .deet {
             h2 {
                 text-align: center;
                 color: $Very-Dark-Blue;
@@ -132,7 +132,7 @@ body{
                 font-weight: 500;
                 margin-bottom: 20px;
             }
-            p {
+            .fp {
                 width: 45%;
                 margin: 20px auto 50px auto;
                 text-align: center;
@@ -156,25 +156,48 @@ body{
             }
            
         }
+        
         .tablinks.active {
+            padding-bottom: 10px;
             border-bottom: 2px solid orangered;
         }
 
         .tabs {
+            position: relative;
+            margin-bottom: 60px;
+            &::after{
+                content: "";
+                width: 40%;
+                height: 70%;
+                bottom: -14%;
+                left: -13.3%;
+                overflow: hidden;
+                border-top-right-radius: 300px;
+                border-bottom-right-radius: 300px;
+                background-color: $Soft-Blue;
+                position: absolute;
+                opacity: 0.9;
+                z-index: 0;
+            }
             .tab {
                 display: none;
                 margin-top: 50px;
                 justify-content: center;
                 align-items: center;
-                
+                position: relative;
+                z-index: 10;
               .tab-p {
-                  margin-left: 60px;
+                  
                     p {
-                      width: 100%;
-                      text-align: left;
-                      margin-bottom: 15px;
+                      width: 80%;
+                      line-height: 1.5;
+                      color: $Grayish-Blue;
+                   
                     }
               }
+
+              
+              
             }
 
             .tab.show {
@@ -185,6 +208,94 @@ body{
 
 
     }
+    .extension {
+        .deet {
+            padding-top: 40px;
+            h2 {
+                text-align: center;
+                color: $Very-Dark-Blue;
+                font-size: 1.7em;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .fp {
+                width: 45%;
+                margin: 10px auto 40px auto;
+                text-align: center;
+                line-height: 1.5;
+                color: $Grayish-Blue;
+            }
+        }
+        .cards {
+            width: 1000px;
+            max-width: 80%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            
+            display: flex;
+           .card {
+               border-radius: 30px;
+               border: 1px solid whitesmoke;
+               text-align: center;
+               margin: 10px;
+               padding: 20px 0 20px 0;
+               box-shadow: 16px 8px 16px -12px rgba(113,126,183,0.75);
+                -webkit-box-shadow: 16px 8px 16px -12px rgba(113,126,183,0.75);
+                -moz-box-shadow: 16px 8px 16px -12px rgba(113,126,183,0.75);
+               
+               h3 {
+                   font-size: 1em;
+                   color: $Very-Dark-Blue;
+                   margin-bottom: 0;
+               }
+               p {
+                   color: $Grayish-Blue;
+                   font-size: 0.8em;
+                   margin-top: 5px;
+               }
+               .dots {
+                   width: 80%;
+                   margin: 10px 0 10px 0;
+               }
+            }
+            
+            .card2 {
+                margin-top: 40px;
+                margin-bottom: -20px;
+            }
+            .card3 {
+                margin-top: 70px;
+                margin-bottom: -40px;
+            }
+
+           
+        }
+    }
+    .faq {
+        .deet {
+            padding-top: 40px;
+            h2 {
+                text-align: center;
+                color: $Very-Dark-Blue;
+                font-size: 1.7em;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .fp {
+                width: 45%;
+                margin: 10px auto 40px auto;
+                text-align: center;
+                line-height: 1.5;
+                color: $Grayish-Blue;
+            }
+        } 
+        .accord {
+            width: 800px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

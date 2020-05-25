@@ -126,7 +126,7 @@ body .feature {
   margin-top: 18vh;
 }
 
-body .feature div h2 {
+body .feature .deet h2 {
   text-align: center;
   color: #252b46;
   font-size: 1.7em;
@@ -134,7 +134,7 @@ body .feature div h2 {
   margin-bottom: 20px;
 }
 
-body .feature div p {
+body .feature .deet .fp {
   width: 45%;
   margin: 20px auto 50px auto;
   text-align: center;
@@ -159,7 +159,28 @@ body .feature .htab ul li a {
 }
 
 body .feature .tablinks.active {
+  padding-bottom: 10px;
   border-bottom: 2px solid orangered;
+}
+
+body .feature .tabs {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+body .feature .tabs::after {
+  content: "";
+  width: 40%;
+  height: 70%;
+  bottom: -14%;
+  left: -13.3%;
+  overflow: hidden;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+  background-color: #5368df;
+  position: absolute;
+  opacity: 0.9;
+  z-index: 0;
 }
 
 body .feature .tabs .tab {
@@ -167,20 +188,110 @@ body .feature .tabs .tab {
   margin-top: 50px;
   justify-content: center;
   align-items: center;
-}
-
-body .feature .tabs .tab .tab-p {
-  margin-left: 60px;
+  position: relative;
+  z-index: 10;
 }
 
 body .feature .tabs .tab .tab-p p {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 15px;
+  width: 80%;
+  line-height: 1.5;
+  color: #9194a1;
 }
 
 body .feature .tabs .tab.show {
   display: flex;
+}
+
+body .extension .deet {
+  padding-top: 40px;
+}
+
+body .extension .deet h2 {
+  text-align: center;
+  color: #252b46;
+  font-size: 1.7em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+body .extension .deet .fp {
+  width: 45%;
+  margin: 10px auto 40px auto;
+  text-align: center;
+  line-height: 1.5;
+  color: #9194a1;
+}
+
+body .extension .cards {
+  width: 1000px;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+body .extension .cards .card {
+  border-radius: 30px;
+  border: 1px solid whitesmoke;
+  text-align: center;
+  margin: 10px;
+  padding: 20px 0 20px 0;
+  box-shadow: 16px 8px 16px -12px rgba(113, 126, 183, 0.75);
+  -webkit-box-shadow: 16px 8px 16px -12px rgba(113, 126, 183, 0.75);
+  -moz-box-shadow: 16px 8px 16px -12px rgba(113, 126, 183, 0.75);
+}
+
+body .extension .cards .card h3 {
+  font-size: 1em;
+  color: #252b46;
+  margin-bottom: 0;
+}
+
+body .extension .cards .card p {
+  color: #9194a1;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+body .extension .cards .card .dots {
+  width: 80%;
+  margin: 10px 0 10px 0;
+}
+
+body .extension .cards .card2 {
+  margin-top: 40px;
+  margin-bottom: -20px;
+}
+
+body .extension .cards .card3 {
+  margin-top: 70px;
+  margin-bottom: -40px;
+}
+
+body .faq .deet {
+  padding-top: 40px;
+}
+
+body .faq .deet h2 {
+  text-align: center;
+  color: #252b46;
+  font-size: 1.7em;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+body .faq .deet .fp {
+  width: 45%;
+  margin: 10px auto 40px auto;
+  text-align: center;
+  line-height: 1.5;
+  color: #9194a1;
+}
+
+body .faq .accord {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .attribution {
