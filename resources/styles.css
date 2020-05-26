@@ -64,6 +64,30 @@ body nav ul li a {
   color: #252b46;
 }
 
+body nav .ham {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  body nav {
+    padding-top: 30px;
+  }
+  body nav .navi {
+    margin-left: 50px;
+  }
+  body nav .ham {
+    display: block;
+    text-align: right;
+    margin-right: 50px;
+  }
+  body nav .hami {
+    align-items: flex-end;
+  }
+  body nav .nav-ul {
+    display: none;
+  }
+}
+
 body header {
   justify-content: space-between;
   padding-top: 60px;
@@ -124,6 +148,47 @@ body header::after {
   position: absolute;
   z-index: 0;
   opacity: 0.9;
+}
+
+@media screen and (max-width: 1000px) {
+  body header {
+    flex-direction: column-reverse;
+  }
+  body header div {
+    margin: 0 auto;
+    text-align: center;
+  }
+  body header div h1 {
+    font-size: 2em;
+    font-weight: 500;
+    width: 80%;
+    margin: 0 auto;
+  }
+  body header div p {
+    width: 80%;
+    margin: 20px auto;
+  }
+  body header .dkimage {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    align-items: center;
+    margin-left: 35px;
+  }
+  body header::after {
+    content: "";
+    width: 60%;
+    height: 30%;
+    top: 20%;
+    right: 0%;
+    overflow: hidden;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    background-color: #5368df;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.9;
+  }
 }
 
 body .feature {
@@ -225,9 +290,15 @@ body .feature .tabs .tab.show {
   body .feature .tabs .tab {
     flex-direction: column;
   }
+  body .feature .tabs .tab .tabimg {
+    width: 80%;
+    text-align: center;
+    margin-left: 40px;
+  }
   body .feature .tabs .tab .tab-p {
     width: 100%;
     margin: 40px auto;
+    margin-bottom: 10px;
     text-align: center;
   }
   body .feature .tabs .tab .tab-p h3 {
@@ -238,6 +309,21 @@ body .feature .tabs .tab.show {
   body .feature .tabs .tab .tab-p p {
     width: 80%;
     margin: 20px auto;
+    margin-bottom: 10px;
+  }
+  body .feature .tabs::after {
+    content: "";
+    width: 50%;
+    height: 30%;
+    top: 19%;
+    left: -13.3%;
+    overflow: hidden;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    background-color: #5368df;
+    position: absolute;
+    opacity: 0.9;
+    z-index: 0;
   }
 }
 

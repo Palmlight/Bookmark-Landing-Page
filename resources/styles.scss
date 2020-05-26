@@ -69,6 +69,28 @@ body{
                 color: $Very-Dark-Blue;
             }
         }
+        .ham {
+            display: none;
+        }
+        @media screen and (max-width: 1000px) {
+            padding-top: 30px;
+            .navi {
+                margin-left: 50px;
+            }
+           .ham {
+               display: block;
+            //    justify-content: center; 
+               text-align: right;
+               margin-right: 50px;
+            }
+            .hami {
+               align-items: flex-end;
+
+            }
+            .nav-ul {
+                display: none;
+            }
+        }
     }
      
     header {
@@ -127,6 +149,47 @@ body{
             position: absolute;
             z-index: 0;
             opacity: 0.9;
+        }
+        @media screen and (max-width: 1000px) {
+            flex-direction: column-reverse;
+            div {
+                margin: 0 auto;
+                text-align: center;
+                h1 {
+                    font-size: 2em;
+                    font-weight: 500;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+                p {
+                    width: 80%;
+                    margin: 20px auto;
+                }
+
+            }
+            .dkimage {
+                margin: 0 auto;
+                text-align: center;
+                width: 90%;
+                align-items: center;
+                margin-left: 35px;
+            }
+
+            &::after {
+                content: "";
+                width: 60%;
+                height: 30%;
+                top: 20%;
+                right: 0%;
+                overflow: hidden;
+                border-top-left-radius: 300px;
+                border-bottom-left-radius: 300px;
+                background-color: $Soft-Blue;
+                position: absolute;
+                z-index: 0;
+                opacity: 0.9;
+            }
+
         }
     }
     .feature {
@@ -233,9 +296,15 @@ body{
                 .tab {
                     
                     flex-direction: column; 
+                    .tabimg {
+                        width: 80%;
+                        text-align: center;
+                        margin-left: 40px;
+                    }
                     .tab-p {
                         width: 100%;
                         margin: 40px auto;
+                        margin-bottom: 10px;
                         text-align: center;
                         h3 {
                             margin: 0 auto;
@@ -246,8 +315,23 @@ body{
                         p {
                             width: 80%;
                             margin: 20px auto;
+                            margin-bottom: 10px;
                         }
                     }
+                }
+                &::after{
+                    content: "";
+                    width: 50%;
+                    height: 30%;
+                    top: 19%;
+                    left: -13.3%;
+                    overflow: hidden;
+                    border-top-right-radius: 300px;
+                    border-bottom-right-radius: 300px;
+                    background-color: $Soft-Blue;
+                    position: absolute;
+                    opacity: 0.9;
+                    z-index: 0;
                 }
                 
             }
