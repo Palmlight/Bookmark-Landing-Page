@@ -149,24 +149,23 @@ body{
         }
         .htab {
             text-align: center;
-            position: relative;
-            ul {
-                list-style: none;            
-                li a {
-                    text-decoration: none;
-                    color: $Very-Dark-Blue;
-                    font-size: 0.9em;
-                    cursor: pointer;
-                }
-
-                
-            }
+            margin: 0 auto;
+            width: 45%;
            
+           
+        }
+        .tablinks {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e2e2e2;
+            color: $Very-Dark-Blue;
+            font-size: 0.8em;
+            font-weight: 300;
+            cursor: pointer;
         }
         
         .tablinks.active {
             padding-bottom: 10px;
-            border-bottom: 2px solid orangered;
+            border-bottom: 1px solid orangered;
         }
 
         .tabs {
@@ -211,7 +210,49 @@ body{
                 display: flex;
             }
         }
+        
+        @media screen and (max-width: 1000px) {
+            .deet {
+                h2 {
+                    width: 60%;
+                    margin: 0 auto;
+                }
+                .fp {
+                    width: 90%;
+                    
+                }
+            }
+            .htab {
+                flex-direction: column;
+            }
+            .tablinks {
+                padding-top: 20px;
+            }
+            .tabs {
+                position: relative;
+                .tab {
+                    
+                    flex-direction: column; 
+                    .tab-p {
+                        width: 100%;
+                        margin: 40px auto;
+                        text-align: center;
+                        h3 {
+                            margin: 0 auto;
+                            width: 80%;
+                            text-align: center;   
 
+                        }
+                        p {
+                            width: 80%;
+                            margin: 20px auto;
+                        }
+                    }
+                }
+                
+            }
+                
+        }
 
 
     }
@@ -277,6 +318,22 @@ body{
 
            
         }
+
+        @media screen and (max-width: 1000px) {
+            .deet {
+                h2 {
+                    width: 60%;
+                    margin: 0 auto;
+                }
+                .fp {
+                    width: 90%;
+                }
+            } 
+            .cards {
+                flex-direction: column;
+            }
+
+        }
     }
     .faq {
         .deet {
@@ -298,11 +355,11 @@ body{
         } 
         .accord {
             width: 600px;
-            max-width: 100%;
+            max-width: 70%;
             margin: 0 auto;
 
             .question {
-                border-bottom: 0.5px solid grey;
+                border-bottom: 0.5px solid #e2e2e2;
                 .qbar{
                     display: flex;
                     justify-content: space-between;
@@ -316,19 +373,35 @@ body{
                 .answer {
                     text-align: justify;
                     display: none;
+                    padding-top: 20px;
+                    padding-bottom: 30px;
                 }
                 .answer.active{
                     display: block;
                 }
             }
             .question1 {
-                border-top: 1px solid $Grayish-Blue;
+                border-top: 1px solid #e2e2e2;
 
             }
         }
         .more {
             display: flex;
             margin: 20px auto;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .deet {
+                h2 {
+                    width: 60%;
+                    margin: 0 auto;
+                }
+                .fp {
+                    width: 90%;
+                }
+            } 
+
+
         }
     }
 
@@ -362,35 +435,76 @@ body{
             padding-top: 50px;
             padding-bottom: 60px;
         }
+
+        @media screen and (max-width: 1000px) {
+            .footerd {
+               
+                h4 {
+                  
+                    width: 90%;
+                    
+                }
+    
+               .contact {
+                  text-align: center;
+                   margin-top: 20px;
+                    
+               }
+                
+            }
+        }
     }
     .footer2 {
         background-color: $Very-Dark-Blue;
         padding-bottom: 20px;
         .final {
             justify-content: space-between;
+
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;                
+            }
         }
         .footerl {
             list-style: none;
             display: flex;
             padding-top: 30px;
             padding-bottom: 30px;
+            // align-items: baseline;
            
-            li a {
+             a {
                 color: #fff;
                 text-decoration: none;
-                margin-right: 25px;
+                margin-top: 6px;
+                margin-left: 30px;
                 font-size: 0.8em;
+            }
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;  
+                .logof {
+                    margin: 0 auto;
+                    width: 200px;
+                }
+                a {
+                    margin-top: 40px;
+                    text-align: center;
+                    margin-right: 0;
+                }
             }
         }
         .sm-icons {
-            list-style: none;
-            display: flex;
+            
+            margin-right: 30px;
             padding-top: 30px;
             padding-bottom: 30px;
-            justify-content: flex-end;
-            li a {
-                margin-left: 30px;
+            text-align: right;
+            @media screen and (max-width: 1000px) {
+                text-align: center;  
+
             }
+            .fb-icon {
+                margin-right: 20px;
+            }
+            
         }
 
         .attribution { font-size: 11px; text-align: center; color: #fff;}

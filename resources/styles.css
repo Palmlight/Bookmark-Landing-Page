@@ -148,23 +148,22 @@ body .feature .deet .fp {
 
 body .feature .htab {
   text-align: center;
-  position: relative;
+  margin: 0 auto;
+  width: 45%;
 }
 
-body .feature .htab ul {
-  list-style: none;
-}
-
-body .feature .htab ul li a {
-  text-decoration: none;
+body .feature .tablinks {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e2e2e2;
   color: #252b46;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  font-weight: 300;
   cursor: pointer;
 }
 
 body .feature .tablinks.active {
   padding-bottom: 10px;
-  border-bottom: 2px solid orangered;
+  border-bottom: 1px solid orangered;
 }
 
 body .feature .tabs {
@@ -204,6 +203,42 @@ body .feature .tabs .tab .tab-p p {
 
 body .feature .tabs .tab.show {
   display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  body .feature .deet h2 {
+    width: 60%;
+    margin: 0 auto;
+  }
+  body .feature .deet .fp {
+    width: 90%;
+  }
+  body .feature .htab {
+    flex-direction: column;
+  }
+  body .feature .tablinks {
+    padding-top: 20px;
+  }
+  body .feature .tabs {
+    position: relative;
+  }
+  body .feature .tabs .tab {
+    flex-direction: column;
+  }
+  body .feature .tabs .tab .tab-p {
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  body .feature .tabs .tab .tab-p h3 {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+  }
+  body .feature .tabs .tab .tab-p p {
+    width: 80%;
+    margin: 20px auto;
+  }
 }
 
 body .extension .deet {
@@ -272,6 +307,19 @@ body .extension .cards .card3 {
   margin-bottom: -40px;
 }
 
+@media screen and (max-width: 1000px) {
+  body .extension .deet h2 {
+    width: 60%;
+    margin: 0 auto;
+  }
+  body .extension .deet .fp {
+    width: 90%;
+  }
+  body .extension .cards {
+    flex-direction: column;
+  }
+}
+
 body .faq .deet {
   padding-top: 40px;
 }
@@ -294,12 +342,12 @@ body .faq .deet .fp {
 
 body .faq .accord {
   width: 600px;
-  max-width: 100%;
+  max-width: 70%;
   margin: 0 auto;
 }
 
 body .faq .accord .question {
-  border-bottom: 0.5px solid grey;
+  border-bottom: 0.5px solid #e2e2e2;
 }
 
 body .faq .accord .question .qbar {
@@ -317,6 +365,8 @@ body .faq .accord .question .qbar .qarr {
 body .faq .accord .question .answer {
   text-align: justify;
   display: none;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 body .faq .accord .question .answer.active {
@@ -324,12 +374,22 @@ body .faq .accord .question .answer.active {
 }
 
 body .faq .accord .question1 {
-  border-top: 1px solid #9194a1;
+  border-top: 1px solid #e2e2e2;
 }
 
 body .faq .more {
   display: flex;
   margin: 20px auto;
+}
+
+@media screen and (max-width: 1000px) {
+  body .faq .deet h2 {
+    width: 60%;
+    margin: 0 auto;
+  }
+  body .faq .deet .fp {
+    width: 90%;
+  }
 }
 
 body .footer1 {
@@ -367,6 +427,16 @@ body .footer1 .footerd .contact input {
   margin: 0 30px 0 auto;
 }
 
+@media screen and (max-width: 1000px) {
+  body .footer1 .footerd h4 {
+    width: 90%;
+  }
+  body .footer1 .footerd .contact {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
 body .footer2 {
   background-color: #252b46;
   padding-bottom: 20px;
@@ -376,6 +446,12 @@ body .footer2 .final {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1000px) {
+  body .footer2 .final {
+    flex-direction: column;
+  }
+}
+
 body .footer2 .footerl {
   list-style: none;
   display: flex;
@@ -383,23 +459,44 @@ body .footer2 .footerl {
   padding-bottom: 30px;
 }
 
-body .footer2 .footerl li a {
+body .footer2 .footerl a {
   color: #fff;
   text-decoration: none;
-  margin-right: 25px;
+  margin-top: 6px;
+  margin-left: 30px;
   font-size: 0.8em;
 }
 
-body .footer2 .sm-icons {
-  list-style: none;
-  display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  justify-content: flex-end;
+@media screen and (max-width: 1000px) {
+  body .footer2 .footerl {
+    flex-direction: column;
+  }
+  body .footer2 .footerl .logof {
+    margin: 0 auto;
+    width: 200px;
+  }
+  body .footer2 .footerl a {
+    margin-top: 40px;
+    text-align: center;
+    margin-right: 0;
+  }
 }
 
-body .footer2 .sm-icons li a {
-  margin-left: 30px;
+body .footer2 .sm-icons {
+  margin-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+  body .footer2 .sm-icons {
+    text-align: center;
+  }
+}
+
+body .footer2 .sm-icons .fb-icon {
+  margin-right: 20px;
 }
 
 body .footer2 .attribution {
